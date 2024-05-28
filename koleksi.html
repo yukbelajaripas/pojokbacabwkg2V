@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POJOK BACA</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- lightgallery css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="koleksi.css">
+    <script src="koleksi.js"></script>
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo1.png" alt="Your Logo" class="logo-img">
+            POJOK BACA
+        </a>
+
+        <div class="navbar" id="navbar"> <!-- Add id for JavaScript toggle -->
+            <a href="Perpustakaan Mini.html">Beranda</a>
+            <a href="koleksi.html">Koleksi</a>
+            <a href="profile.html">Profile</a>
+        </div>
+
+        <div class="mobile-menu-icon" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <h1 class="heading">Ayo pilih jenis bacaanmu!</h1>
+
+   <!-- teacher section starts -->
+   <section class="additional-images">
+    <div class="image-container">
+        <div class="image">
+            <a href="fiksiwow.html">
+                <img src="fiksiwow/headerpic.png" alt="">
+                <h4>Fiksi</h4>
+            </a>
+        </div>
+        <div class="image">
+            <a href="nonfiksiwow.html">
+                <img src="nonfiksiwow/header.png" alt="">
+                <h4>Non Fiksi</h4>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer section starts -->
+<section class="footer">
+    <div class="credit"> &copy; copyright @ 2024 by <span>KELOMPOK 004-KELAS 004-PPG PRAJABATAN GELOMBANG 1 TAHUN 2023</span></div>
+</section>
+<!-- Footer section ends -->
+
+
+    <!-- lightgallery cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function() {
+            document.getElementById("navbar").classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

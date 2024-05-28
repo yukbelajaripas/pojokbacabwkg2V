@@ -1,0 +1,524 @@
+/* CSS for smaller screens */
+@media (max-width: 768px) {
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    background: var(--white);
+    z-index: 1001;
+    transition: left 0.3s ease;
+  }
+
+  .header .navbar.active {
+    left: 0;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+}
+
+:root {
+  --orange: #365486;
+  --pink: #F2F1EB;
+  --black: #1d1c1c;
+  --white: #fff;
+  --light-color: #666;
+  --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+* {
+  font-family: 'KG Primary Penmanship', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 7%;
+}
+
+.heading {
+  font-size: 4rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+.heading span {
+  color: var(--orange);
+  text-transform: capitalize;
+}
+
+.btn {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  border-radius: .5rem;
+  border: .2rem solid var(--orange);
+  color: var(--orange);
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--orange);
+  color: var(--white);
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: linear-gradient(to right, #3f7783, #60a7a2);
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-img {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: #f6f6e7;
+}
+
+.header .logo i {
+  color: var(--white);
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: #F2F1EB;
+}
+
+.header .navbar a:hover,
+.header .icons div:hover {
+  color: var(--orange);
+}
+
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+#menu-btn {
+  display: none;
+  color: #f6f6e7;
+  font-size: 2.5rem;
+}
+
+/* Add this to change the background color when the menu is active */
+/* Add this to change the background picture when the menu is active */
+.header .navbar.active {
+  background-image: url('library/btn.png'); /* Change this to the path of your desired image */
+  background-size: cover; /* Adjust this property as needed */
+  background-position: center bottom; /* Position the image at the center bottom */
+  background-color: #F2F1EB; /* Change this to your desired background color */
+  left: 0;
+}
+
+.header .login-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 35rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: .5rem;
+  background: var(--orange);
+  text-align: center;
+}
+
+.header .login-form.active {
+  right: 2rem;
+  transition: .4s linear;
+}
+
+.header .login-form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.header .login-form .box {
+  width: 100%;
+  margin: .7rem 0;
+  background: #eee;
+  border-radius: .5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.header .login-form p {
+  font-size: 1.4rem;
+  padding: .5rem 0;
+  color: var(--light-color);
+}
+
+.header .login-form p a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+/* home */
+
+.home {
+    min-height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .content h3 {
+  font-size: 2.5rem;
+  color: #0c012e;
+  text-align: left;
+}
+
+.home .content h6 {
+  font-size: 2.5em;
+  color: #9f4417;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.home .content h6 span {
+  font-size: 0.6em;
+  color: #51829B;
+  display: block;
+  text-align: left;
+}
+
+.home .content p {
+  font-size: 1.7rem;
+  color: #6C3B34;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.home .content a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3f7783;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home .content a.btn:hover {
+  background-color: rgb(124, 194, 182);
+}
+
+.home .image {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: center; /* horizontally center the background */
+  align-items: center; /* vertically center the background */
+  background-size: cover; /* cover the entire container */
+  background-position: center; /* center the background */
+}
+
+.home .image img {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .home .image img {
+    position: absolute; /* Set the image to absolute positioning */
+    top: 30px; /* Position the image at the top */
+    left: 0; /* Align the image to the left */
+    width: 100%; /* Ensure the image fills the entire width */
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home .image img {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .home {
+    gap: 1rem; /* Adjusted the gap value */
+  }
+}
+
+
+section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+section .box {
+  flex: 0 0 calc(25% - 10px); /* 4 boxes per row on large screens */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Add transition effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Add box shadow */
+}
+
+section .box:hover {
+  background-color: #c9dedc; /* Change box background color on hover */
+  border-color: #60a7a2; /* Change box border color on hover */
+  border-width: 0.cap;
+  color: #fff; /* Change text color on hover */
+  transform: translateY(-5px); /* Move box up slightly on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+
+section .box img {
+  width: 100%;
+  height: 150px; /* Set fixed height */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+section .title {
+  text-align: center;
+  margin: 10px 0;
+  text-transform: none;
+}
+
+
+
+section .link {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-transform: none;
+}
+
+/* Media query for tablets and smaller screens */
+@media only screen and (max-width: 991px) {
+  section .box {
+      flex: 0 0 calc(50% - 10px); /* 2 boxes per row on tablets */
+  }
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 575px) {
+  section .container {
+      flex-direction: row; /* Change to row for 2 boxes side by side */
+      flex-wrap: wrap; /* Ensure wrapping */
+      justify-content: space-between; /* Space between boxes */
+  }
+
+  section .box {
+      flex: 0 0 calc(50% - 10px); /* 2 boxes per row on mobile phones */
+  }
+}
+
+/* Pagination */
+.pagination-container {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: #3f7783;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pagination li a:hover {
+  background-color: #ddd;
+}
+
+
+/* footer */
+
+.footer {
+  background: var(--pink);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: var(--orange);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--orange);
+}
+
+.footer .box-container .box a i {
+  padding-right: .5rem;
+  color: var(--orange);
+}
+
+.footer .credit {
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: .1rem solid rgba(0, 0, 0, .3);
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+.footer .credit span {
+  color: var(--orange);
+}
+
+/* media query */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem 3rem;
+  }
+
+  section {
+    padding: 3rem;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--white);
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .content h3 {
+    font-size: 2.5rem;
+  }
+}
+

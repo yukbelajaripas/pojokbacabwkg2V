@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POJOK BACA</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- lightgallery css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="home1.css">
+    <script src="home1.js"></script>
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo1.png" alt="Your Logo" class="logo-img">
+            POJOK BACA
+        </a>
+        <div class="navbar" id="navbar"> 
+            <a href="Perpustakaan Mini.html">Beranda</a>
+            <a href="koleksi.html">Koleksi</a>
+            <a href="profile.html">Profile</a>
+        </div>
+        
+        <div class="mobile-menu-icon" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- Add your other sections here -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>SELAMAT DATANG</h3> 
+            <h6>DI POJOK BACA DIGITAL
+                <span>SD NEGERI BAWAKARAENG 2</span></h6> 
+            <p>Buku di pojok baca kelas kurang? Tenang saja! Kamu akan menemukan lebih banyak buku bacaan di sini <3 </p>
+            <a href="koleksi.html" class="btn">Ayo Cari Buku Favoritmu!</a>
+        </div>
+        <div class="image">
+            <img src="images/BWLIB2.png" alt="">
+        </div>
+    </section>
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <p>"Reading is the magic carpet that takes your imagination on extraordinary adventures through worlds yet to be discovered."</p>
+            </div>
+        </div>
+        <div class="credit"> &copy; copyright @ 2024 by <span>KELOMPOK 004-KELAS 004-PPG PRAJABATAN GELOMBANG 1 TAHUN 2023</div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- lightgallery cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function() {
+            document.getElementById("navbar").classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
